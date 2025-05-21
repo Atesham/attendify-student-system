@@ -1,27 +1,22 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["react", "react-dom", "next"]
+  },
+  "include": ["src"],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ],
-  
-    "compilerOptions": {
-      "jsx": "react-jsx",
-      "esModuleInterop": true,
-      "composite": true,
-      "strict": true,
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["./src/*"]
-      },
-      "skipLibCheck": true,
-      "allowJs": true,
-      "strictNullChecks": true,
-      "moduleResolution": "node",
-      "target": "es5",
-      "lib": ["dom", "dom.iterable", "esnext"],
-      "types": ["react", "react-dom"]
-    },
-    "include": ["src"],
-    "exclude": ["node_modules"]
-  }
+  ]
+}
